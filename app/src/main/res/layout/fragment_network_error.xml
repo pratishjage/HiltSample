@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".base.ui.NetworkErrorFragment">
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/colorPrimary" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginEnd="@dimen/dp_16"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/tvHeader"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="@string/whoops"
+      android:textColor="@color/black"
+      android:textSize="28dp" />
+
+    <TextView
+      android:id="@+id/tvSubHeader"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dp_8"
+      android:gravity="center_horizontal"
+      android:text="@string/no_internet_detail_msg"
+      android:textColor="@color/text_color_secondary" />
+
+    <ImageView
+      android:id="@+id/ivErrorImage"
+      android:layout_width="250dp"
+      android:layout_height="250dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/dp_8"
+      android:src="@drawable/no_internet" />
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnAction"
+      style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dp_56"
+      android:layout_marginStart="@dimen/dp_16"
+      android:layout_marginTop="@dimen/dp_8"
+      android:layout_marginEnd="@dimen/dp_16"
+      android:text="@string/retry"
+      android:textAllCaps="true"
+      app:strokeColor="@color/colorPrimary"
+      tools:text="@string/retry" />
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_gravity="bottom"
+    android:background="@color/colorPrimary" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">DaggerSample</string>
+  <string name="something_went_wrong">Something went wrong</string>
+  <string name="no_internet_detail_msg">No internet connection found.\nCheck your connection or Try again</string>
+  <string name="whoops">Whoops !</string>
+  <string name="retry">RETRY</string>
+</resources>
